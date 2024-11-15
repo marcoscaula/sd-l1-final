@@ -33,7 +33,7 @@ test.serial("Corre ava", async (t) => {
 
 test.serial("Testeo el método getById", async (t) => {
   const collection = new PelisCollection();
-  await collection.add({
+  await collection.addPeli({
     id: TEST_ID,
     title: TEST_TITLE,
     tags: ["tt", "rr"],
@@ -46,12 +46,12 @@ test.serial("Testeo el método getById", async (t) => {
 
 test.serial("Testeo el método search", async (t) => {
   const collection = new PelisCollection();
-  await collection.add({
+  await collection.addPeli({
     id: TEST_ID,
     title: TEST_TITLE,
     tags: ["tt", "rr"],
   });
-  await collection.add({
+  await collection.addPeli({
     id: SECOND_TEST_ID,
     title: SECOND_TEST_TITLE,
     tags: ["yy", "uu"],
